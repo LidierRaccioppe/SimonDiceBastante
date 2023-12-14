@@ -181,7 +181,12 @@ fun getEstado(): Estado {
 fun setEstado(estado: Estado) {
 }
 
+## Clase IU
 
+Esta clase es la que se encarga de la interfaz de usuario del juego, donde la mayoria de las funciones
+solo hacen uso de las que estan en el MyViewModel, por lo que no se explicaran.
+
+Lo unico a llamar atención es que la forma que estan colocadas las columnas y lineas.
 
 
 
