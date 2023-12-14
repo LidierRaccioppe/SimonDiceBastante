@@ -36,163 +36,149 @@ Donde cada uno es un color mutable
 
 Esta clase es la que se encarga de la logica del juego.
 
-#### Funcionesclass MyViewModel : ViewModel() {
-class MyViewModel : ViewModel() {
+#### Funciones 
 
-    - Genera un número aleatorio entre 0 y el numeroLimiteSuperior
-    fun generarNumeroAleatorio(numeroLimiteSuperior: Int): Int {
-        - ...
-    }
+- Genera un número aleatorio entre 0 y el numeroLimiteSuperior
 
-    - Añade un color a la secuencia del usuario
-    fun anadirColorSecuenciaUsuario(color: Int) {
-        - ...
-    }
+fun generarNumeroAleatorio(numeroLimiteSuperior: Int): Int {
+}
 
-    - Aumenta la ronda en la que estamos en 1
-    fun aumentarRonda() {
-        - ...
-    }
+- Añade un color a la secuencia del usuario
 
-    - Reinicia la ronda en la que estamos
-    fun reiniciarRonda() {
-        - ...
-    }
+fun anadirColorSecuenciaUsuario(color: Int) {
+}
 
-    - Añade un color a la secuencia
-    fun anadirColorSecuencia(color: Int) {
-        - ...
-    }
 
-    - Aumenta la secuencia de colores y muestra al usuario la secuencia de colores
-    fun aumentarSecuenciaMaquina() {
-        - ...
-    }
+- Aumenta la ronda en la que estamos en 1
 
-    - Aumentar la secuencia de colores del usuario
-    fun aumentarSecuenciaUsuario(color: Int) {
-        - ...
-    }
+fun aumentarRonda() {
+}
 
-    - Obtiene el último elemento de la secuencia del usuario
-    fun getUltimoElementoSecuenciaUsuario(): Int {
-        - ...
-    }
+- Reinicia la ronda en la que estamos
 
-    - Comprueba si la secuencia del usuario es correcta
-    fun comprobarSecuenciaUsuario(): Boolean {
-        - ...
-    }
+fun reiniciarRonda() {
+}
 
-    - Muestra la secuencia de colores del usuario
-    fun getSecuenciaUsuario(): MutableList<Int> {
-        - ...
-    }
+- Añade un color a la secuencia
 
-    - Getter de la secuencia de colores
-    fun getSecuenciaColores(): MutableList<Int> {
-        - ...
-    }
+fun anadirColorSecuencia(color: Int) {
+}
 
-    - Getter de la secuencia de colores del usuario
-    fun getSecuenciaColoresUsuario(): MutableList<Int> {
-        - ...
-    }
+- Aumenta la secuencia de colores y muestra al usuario la secuencia de colores
 
-    - Muestra la secuencia de colores y hace un log.d de la secuencia
-    fun getSecuenciaMaquina(): MutableList<Int> {
-        - ...
-    }
+fun aumentarSecuenciaMaquina() {
+}
+- Aumentar la secuencia de colores del usuario
 
-    - Muestra la secuencia de colores del usuario y hace un log.d de la secuencia
-    fun mostrarSecuenciaUsuario(): MutableList<Int> {
-        - ...
-    }
+fun aumentarSecuenciaUsuario(color: Int) {
+}
+- Obtiene el último elemento de la secuencia del usuario
 
-    - Reinicia la secuencia
-    fun reiniciarSecuencia() {
-        - ...
-    }
+fun getUltimoElementoSecuenciaUsuario(): Int {
+}
+- Comprueba si la secuencia del usuario es correcta
 
-    - Reinicia la secuencia del usuario
-    fun reiniciarSecuenciaUsuario() {
-        - ...
-    }
+fun comprobarSecuenciaUsuario(): Boolean {
+}
+- Muestra la secuencia de colores del usuario
 
-    - Reinicia el estado del juego
-    fun reiniciarEstado() {
-        - ...
-    }
+fun getSecuenciaUsuario(): MutableList<Int> {
+}
+- Getter de la secuencia de colores
 
-    - Reinicia el record del juego
-    fun reiniciarRecord() {
-        - ...
-    }
+fun getSecuenciaColores(): MutableList<Int> {
+}
+- Getter de la secuencia de colores del usuario
 
-    - Obtiene el último elemento de la secuencia de la máquina
-    fun getUltimoElementoSecuenciaMaquina(): Int {
-        - ...
-    }
+fun getSecuenciaColoresUsuario(): MutableList<Int> {
+}
+- Muestra la secuencia de colores y hace un log.d de la secuencia
 
-    - Reinicia el juego
-    fun reiniciarJuego() {
-        - ...
-    }
+fun getSecuenciaMaquina(): MutableList<Int> {
+}
+- Muestra la secuencia de colores del usuario y hace un log.d de la secuencia
 
-    - Comprueba si el record se ha superado
-    fun comprobarRecord(): Boolean {
-        - ...
-    }
+fun mostrarSecuenciaUsuario(): MutableList<Int> {
+}
+- Reinicia la secuencia
 
-    - Actualiza el record
-    fun actualizarRecord() {
-        - ...
-    }
+fun reiniciarSecuencia() {
+}
+- Reinicia la secuencia del usuario
 
-    - Devuelve la ronda actual
-    fun getRonda(): Int {
-        - ...
-    }
+fun reiniciarSecuenciaUsuario() {
+}
+- Reinicia el estado del juego
 
-    - Comprueba si la secuencia del usuario es correcta
-    fun comprobarSecuencia(): Boolean {
-        - ...
-    }
+fun reiniciarEstado() {
+}
+- Reinicia el record del juego
 
-    - Oscurece el color
-    fun tintinearOscurecimiento(color: Color, factor: Float): Color {
-        - ...
-    }
+fun reiniciarRecord() {
+}
+- Obtiene el último elemento de la secuencia de la máquina
 
-    - Muestra la secuencia de colores de la máquina con un retraso entre colores
-    fun mostrarSecuenciaMaquina(time: Long) {
-        - ...
-    }
+fun getUltimoElementoSecuenciaMaquina(): Int {
+}
 
-    - Muestra la secuencia de colores de la máquina y ejecuta la función en un hilo bloqueante
-    fun mostrarSecuenciaMaquinaEjecutar(time: Long) = runBlocking {
-        - ...
-    }
+- Reinicia el juego
 
-    - Tintinea el color de un usuario para resaltar la selección
-    fun tintineaUsuarioBlancoMostrar(numColor: Int) = runBlocking {
-        - ...
-    }
+fun reiniciarJuego() {
+}
 
-    - Tintinea el color de un usuario para resaltar la selección
-    fun tintineaUsuarioBlanco(color: Int) {
-        - ...
-    }
+- Comprueba si el record se ha superado
 
-    - Obtiene el estado del juego
-    fun getEstado(): Estado {
-        - ...
-    }
+fun comprobarRecord(): Boolean {
+}
 
-    - Establece el estado del juego
-    fun setEstado(estado: Estado) {
-        - ...
-    }
+- Actualiza el record
+
+fun actualizarRecord() {
+}
+
+- Devuelve la ronda actual
+
+fun getRonda(): Int {
+}
+
+- Comprueba si la secuencia del usuario es correcta
+
+fun comprobarSecuencia(): Boolean {
+}
+
+- Oscurece el color
+
+fun tintinearOscurecimiento(color: Color, factor: Float): Color {
+}
+
+- Muestra la secuencia de colores de la máquina con un retraso entre colores
+
+fun mostrarSecuenciaMaquina(time: Long) {
+}
+
+- Muestra la secuencia de colores de la máquina y ejecuta la función en un hilo bloqueante
+
+fun mostrarSecuenciaMaquinaEjecutar(time: Long) = runBlocking {
+}
+
+- Tintinea el color de un usuario para resaltar la selección
+
+fun tintineaUsuarioBlancoMostrar(numColor: Int) = runBlocking {
+}
+
+- Tintinea el color de un usuario para resaltar la selección
+
+fun tintineaUsuarioBlanco(color: Int) {
+}
+
+- Obtiene el estado del juego
+
+fun getEstado(): Estado {
+}
+
+- Establece el estado del juego
+
+fun setEstado(estado: Estado) {
 }
 
 
